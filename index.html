@@ -4,6 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Lazy Ui</title>
 
     <!-- Metro 4 -->
     <link rel="stylesheet" href="css/metro-all.min.css">
@@ -16,12 +17,18 @@
     <!-- // <script src="js/onsite.js"></script> -->
 	<script src="js/preCode.js" type="text/javascript" ></script>
 
+	<style type="text/css">
+	.tabs-wrapper {min-height: 41px;}
+	.tab-link {top: 2px;}
+	.tab-link li.active {border-top-color: #8817fc !important;border-top-width: 2px !important;}
+
+	</style>
 
 
 </head>
 <body>
 
-    <div class="container-fluid bg-brandColor2">
+    <div class="container-fluid bg-brandColor2" data-role="appbar">
         <header class="container topbar topbar-expand-sm">
 		    <a href="#" class="topbar-brand no-hover fg-white bd-white border border-radius pl-2 pr-2">
 		        <span style="" class="">
@@ -51,7 +58,7 @@
 		
 		<div class="container">
 
-			<div class="grid pt-4 ">
+			<div class="grid pt-20 mb-0">
 				<div class="row">
 				 	<div class="cell text-center">
 				 		<h5>Write simple, into: advanced and complex result</h5>
@@ -86,35 +93,81 @@
 		</div>
 	</div>
 
+	<div class="bg-light border-bottom bd-lightGray ">
+		<div class="container">
+			<ul class="tabs-expand-md bg-light w-100 tab-link" data-role="tabs" >
+				<li class="active"><a href="#" >Intro</a></li>
+				<li><a href="#" >BS 3</a></li>
+				<li><a href="#" >BS 4</a></li>
+			</ul>
+		</div>
+	</div>
+
 	<div class="container">
-		<div class="grid" >
+		<div class="grid pt-5" >
 
-			<div class="row">
-				<div class="cell">
-					<h3>Get started:</h3>
-					<p>just include file</p>
-					<dl class="horizontal">
+			<h3>Get started:</h3>
+			<p>just include file</p>
+			<dl class="horizontal">
 
-						<dt>Bootstrap 3</dt>
-						<dd>include lazyui for bootstrap 3</dd>
-						<dd>
-							<pre class="remark"><code>
-								&lt;script src=&quot;js/lazyui.bs3.js&quot;&gt;&lt;/script&gt;
-							</code></pre>
-						</dd>
+				<dt>Bootstrap 3</dt>
+				<dd>include lazyui for bootstrap 3</dd>
+				<dd>
+					<pre class="remark"><code>
+						&lt;script src=&quot;js/lazyui.bs3.js&quot;&gt;&lt;/script&gt;
+					</code></pre>
+				</dd>
 
-						<dt>Bootstrap 4</dt>
-						<dd>include lazyui for bootstrap 4</dd>
-						<dd>
-							<pre class="remark"><code>
-								&lt;script src=&quot;js/lazyui.bs4.js&quot;&gt;&lt;/script&gt;
-							</code></pre>
-						</dd>
+				<dt>Bootstrap 4</dt>
+				<dd>include lazyui for bootstrap 4</dd>
+				<dd>
+					<pre class="remark"><code>
+						&lt;script src=&quot;js/lazyui.bs4.js&quot;&gt;&lt;/script&gt;
+					</code></pre>
+				</dd>
 
-					</dl>
+			</dl>
 
-				</div>
-			</div>
+			<h3>Components</h3>
+
+			<table class="table table-border cell-border striped">
+				<thead>
+					<tr>
+						<th>Component</th>
+						<th>BS 3</th>
+						<th>BS 4</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Form Input</td>
+						<td>yes</td>
+						<td>yes</td>
+					</tr>
+					<tr>
+						<td>Tabs</td>
+						<td>yes</td>
+						<td>yes</td>
+					</tr>
+					<tr>
+						<td>Accordion</td>
+						<td>yes</td>
+						<td>yes</td>
+					</tr>
+					<tr>
+						<td>Carousel</td>
+						<td>yes</td>
+						<td>yes</td>
+					</tr>
+					<tr>
+						<td>Modal</td>
+						<td>yes</td>
+						<td>yes</td>
+					</tr>
+				</tbody>
+			</table>
+
+
 		</div>
 	</div>
 
